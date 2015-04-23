@@ -1,16 +1,19 @@
-title: "My Opinion"
+title: "Welcom!look at here"
 date: 2015-04-23 10:56:10
 categories: 个人感想
 tags: [Opinions]
 ---
-这是我的第一篇博客，写的还不太好。目前正在完善中
-<!---->
-![描述](/a.jpg)
-[LLL](http://liulina51k.github.io "我的博客")
-```c
-var s="hello Markdown"
-println(s);
-```
-    ftp> get /usr/your/1.htm 1.htm (回车)
+##感悟：
+这是我的第一篇博客，写的还不太好。目前正在完善中！！！
+好高兴终于有了自己的博客了！！！
+感觉真的是好神奇，好喜欢呀。以后要努力写博客，记录生活，记录一些技术！！！！
+虽然自己的技术知识还不是很成熟，不过我会一点点努力加深的！！！！！！！！！！
+还有本博客是基于node，hexo，git搭建起来的！还要多亏某位的指点！！！
+在此很是感谢，别的就不说了！！！
+##哈哈，给大家看两张女神的照片！嘻嘻！
+都是我特别收藏的！本人特别喜欢。
+![有范](/yuanyuan2.jpg)
+![淑女](/yuanyuan.jpg)
+
 	
 
