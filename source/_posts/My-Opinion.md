@@ -12,8 +12,8 @@ tags: [Opinions]
 在此很是感谢，别的就不说了！！！
 ##哈哈，给大家看两张女神的照片！嘻嘻！
 都是我特别收藏的！本人特别喜欢。
-![有范](/yuanyuan2.jpg)
-![淑女](/yuanyuan.jpg)
+![有范](/images/yuanyuan2.jpg)
+![淑女](/images/yuanyuan.jpg)
 
 	
 
