@@ -4,10 +4,11 @@ categories: js 相关笔记
 tags: js 相关笔记
 ---
 今天主要是弄了js相关函数的一些东西。整理如下：
+<!--more-->
 ##Array 函数
 **1.array.concat(item...) 函数的使用**
 返回一个新数组，将参数分别附在调用它的对象内容的后面。如果为数组，则分别依次追加其后面。参数可以为多个。
-```
+```js
 function concat1() {
 	var a = ['a','b','c'];
 	var b = ['x','y','z'];
@@ -18,7 +19,7 @@ function concat1() {
 
 **2.array.join(separator) 函数的使用**
 该方法把一个array构成一个字符串。连接符默认为',',可以使用空字符。如果想用把大量的片段组装成一个字符串，可以把他们放到数组中，并用join连接。比用"+"快
-```
+```js
 function join1() {
 	var a = ['a','b','c'];
 	a.push('d');
@@ -28,20 +29,20 @@ function join1() {
 ```
 **3.array.pop 函数的使用**
 该方法使数组像堆栈一样工作，移除数组中的最后一个元素，并返回，如果数组为空返回undefined
-```
+```js
 //给类型添加方法
 Function.prototype.method=function(name,func){
 	this.prototype[name] = func;
 	return this;
 }
 ```
-```
+```js
 //pop可以这样实现
 Array.method('pop2',function(){
 	return this.splice(this.length-1,1)[0];
 })
 ```
-```
+```js
 function pop1() {
 	var a = ['a','b','c'];
 	var c = a.pop2();//c
@@ -50,7 +51,7 @@ function pop1() {
 ```
 **4.array.push(item...) 函数的使用**
 该方法把一个参数，或多个参数item,附加到一个数组的尾部，会修改该数组，若参数为数组，整体作为一个单元插入到新数组，返回新数组的长度。
-```
+```js
 //push 可以这样实现
 Array.method('push2',function(){
 	this.splice.apply(
@@ -60,7 +61,7 @@ Array.method('push2',function(){
 	return this.length;
 });
 ```
-```
+```js
 function push1() {
 	var a = ['a','b','c'];
 	var b = ['x','y','z'];
@@ -71,7 +72,7 @@ function push1() {
 ```
 **5.array.reverse 函数的使用**
 该方法反转array中元素的顺序。它返回当前的array.
-```
+```js
 function reverse1() {
 	var a = ['a','b','c'];
 	var b = a.reverse();
@@ -81,13 +82,13 @@ function reverse1() {
 ```
 **6.array.shift 函数的使用**
 该方法使数组像堆栈一样工作，移除数组中的第一个元素，并返回，如果数组为空返回undefined。shift 通常比pop慢的多.
-```
+```js
 //shift可以这样实现
 Array.method('shift2',function(){
 	return this.splice(0,1)[0];
 });
 ```
-```
+```js
 function shift1() {
 	var a = ['a','b','c'];
 	var c = a.shift2();
@@ -97,7 +98,7 @@ function shift1() {
 ```
 **7.array.slice(start,end) 函数的使用**
 该方法对array中的一段做浅复制。第一个被复制的元素是array[start],它将一直复制到array[end]为止。end参数可选，默认为array.length。如果start 大于array.length,得到的是一个新数组。
-```
+```js
 function slice1(start,end) {
 	var a = ['a','b','c'];
 	var b = a.slice(0,1);
@@ -110,7 +111,7 @@ function slice1(start,end) {
 ```
 **8.array.sort(comparefn) 函数的使用**
 该方法对array中的内容进行适当的排序，它不能给数字进行确切的排序。
-```
+```js
 function sort1() {
 	var n = [4,8,15,16,23,42];
 	n.sort();
@@ -118,7 +119,7 @@ function sort1() {
 }
 ```
 javascript的默认比较函数假定所有被排序的元素都是字符串，可以使用自己的比较函数来替换默认的比较函数，接受两个参数，相等则返回0，如果第一个参数，排在前面，则返回负数，如果第二个参数排在前面，则返回正数。类似于（FORTRAN 2的算术IF语句）
-```
+```js
 function sort2() {
 	var n = [4,8,15,16,23,42];
 	n.sort(function(a,b){
@@ -128,7 +129,7 @@ function sort2() {
 }
 ```
 上面这个函数能给数字排序，但它不能给字符串排序。如果我们想要给任何简单值数组排序，则必须做更多的工作。
-```
+```js
 function sort3() {
 	var m = ['aa','bb','a',4,8,15,16,23,42];
 	m.sort(function(a,b){
@@ -143,7 +144,7 @@ function sort3() {
 }
 ```
 更智能的比较函数，对对象数组的排序
-```
+```js
 //by函数接受一个成语名字符串作为参数
 //并返回一个可以用来对包含该成员的对象数组进行排序的比较函数。
 var by = function(name) {
@@ -171,7 +172,7 @@ var by = function(name) {
 `关于sort更深一层，本人了解的也不是很多，有兴趣的自己去了解`。
 **9.array.splice(start,deleteCount,item...) 函数的使用**
 该方法从array中移除一个或多个元素，并用新的item替换它们，start起始位置，deleteCount删除个数，item后面的所有参数，被插入到被删除元素的位置。它返回一个包含被删除元素的数组。splice 最主要的用处是 从一个数组中删除元素。
-```
+```js
 function splice1() {
 	var a = ['a','b','c'];
 	var r = a.splice(1,1,'ache','bug');
@@ -181,7 +182,7 @@ function splice1() {
 ```
 **10.array.unshift(item...) 函数的使用**
 该方法和push一样，用来把元素加入到数组中，但它是把item插入到数组的起始部分，而不是末尾。它返回array的新的长度值。
-```
+```js
 //unshift可以像这样实现
 Array.method('unshift2',function(){
 	this.splice.apply(
@@ -190,7 +191,7 @@ Array.method('unshift2',function(){
 	return this.length;
 });
 ```
-```
+```js
 //unshift可以像这样实现
 function unshift1() {
 	var a = ['a','b','c'];

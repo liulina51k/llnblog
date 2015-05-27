@@ -4,6 +4,7 @@ categories: js 相关笔记
 tags: js 相关笔记
 ---
 今天主要是弄了js相关函数的一些东西。整理如下：
+<!--more-->
 ##Number函数
 **1.number.toExponential(fractionDigits) 函数的使用**
 该方法把这个number转换成一个指数形式的字符串。可选参数fractionDigits控制其小数点后的数字位数。它的值必须在0到20之间。
