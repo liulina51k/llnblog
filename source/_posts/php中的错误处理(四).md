@@ -1,7 +1,7 @@
 title: "PHP 中的错误处理(四)"
 date: 2015-06-11 15:28:27
-categories: php
-tags: php
+categories: Php
+tags: Php
 ---
 本文中主要介绍`自定义错误处理器`等的相关知识。
 <!--more-->

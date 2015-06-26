@@ -1,7 +1,7 @@
 title: "jsObject_functions"
 date: 2015-05-19 10:53:49
-categories: js 相关笔记
-tags: js 相关笔记
+categories: Js 相关笔记
+tags: Js 相关笔记
 ---
 今天主要是弄了js相关函数的一些东西。整理如下：
 <!--more-->

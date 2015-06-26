@@ -1,7 +1,7 @@
 title: "PHP 中的异常处理(一)"
 date: 2015-06-12 17:25:44
-categories: php
-tags: php
+categories: Php
+tags: Php
 ---
 本文中主要对php中的`异常`做下基本的介绍。
 <!--more-->

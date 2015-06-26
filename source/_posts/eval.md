@@ -1,7 +1,7 @@
 title: "js中的 eval 及 with 介绍"
 date: 2015-06-04 17:54:08
-categories: js
-tags: js
+categories: Js 相关笔记
+tags: Js 相关笔记
 ---
 今天在工作中遇到了`eval` ，弄了半天，烦死了。后来还是选择了其他的方式解决。有人建议我不要用eval，我就在想为什么？俗话说的好，`哪里跌倒，哪里爬起来`。于是我又更详细的了解了一下eval。介绍如下：
 <!--more-->

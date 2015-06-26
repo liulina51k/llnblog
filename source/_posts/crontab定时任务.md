@@ -1,7 +1,7 @@
 title: "crontab 定时任务"
 date: 2015-06-01 22:04:19
-categories: linux
-tags: linux
+categories: Linux
+tags: Linux
 ---
 关于定时任务，我们需要了解一下相关内容：
 1, 掌握如何设置定时任务常用命令
