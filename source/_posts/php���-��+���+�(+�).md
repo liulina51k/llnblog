@@ -1,7 +1,7 @@
-title: "PHP 中的错误处理与异常(三)"
+title: "PHP 中的错误处理(三)"
 date: 2015-06-11 13:23:54
-categories: php
-tags: php
+categories: Php
+tags: Php
 ---
 本文中主要介绍php如何`记录错误`以及如何`发送错误`等的相关知识。
 <!--more-->

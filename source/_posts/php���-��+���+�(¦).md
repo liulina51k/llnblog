@@ -1,7 +1,7 @@
-title: "PHP 中的错误处理与异常(二)"
+title: "PHP 中的错误处理(二)"
 date: 2015-06-11 10:55:03
-categories: php
-tags: php
+categories: Php
+tags: Php
 ---
 本文中主要介绍如何开启错误配置选项，如何设置错误级别，以及如何通过trigger_error()来触发php错误。
 <!--more-->

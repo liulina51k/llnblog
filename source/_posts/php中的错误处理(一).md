@@ -1,7 +1,7 @@
 title: "PHP 中的错误处理(一)"
 date: 2015-06-10 17:04:18
-categories: Php
-tags: Php
+categories: php
+tags: php
 ---
 接下来几篇文章将会介绍下php中的错误与异常，首先我们要知道二者是完全不同的概念，不能将二者混为一谈。本文中主要介绍php中的错误类型及其级别。
 <!--more-->

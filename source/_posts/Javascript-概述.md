@@ -1,7 +1,7 @@
 title: "Javascript 概述"
 date: 2015-04-23 23:10:59
-categories: Js 相关笔记
-tags: Js 相关笔记
+categories: Js
+tags: [Js]
 ---
 ##Javascript 的特点
 <!--more-->
