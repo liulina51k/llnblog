@@ -7,7 +7,7 @@ tags: 缓存
 1，静态缓存
 2，Memcache redis 缓存。
 <!--more-->
-##静态缓存
+## 静态缓存
 静态缓存：保存在磁盘上的静态文件，用php生成数据放入静态文件中
 
 php操作缓存
@@ -49,20 +49,20 @@ class File {
 	}
 }
 ```
-##Memcache, Redis特点
+## Memcache, Redis特点
 1, Memcache和Redis都是用来管理数据的。
 2, 他们数据都是存放在内存里的。
 3, Redis可以定期将数据备份到磁盘（持久化）。
 4, Memcache只是简单的key/value缓存。
 5, Redis不仅仅支持简单的k/v类型的数据，同时还提供list, set, hash等数据结构的存储。
 
-##Redis数据操作
+## Redis数据操作
 1, 开启redis客户端
 2, 设置缓存值 - set index-mk-cache '数据'
 3, 获取缓存数据 - get index-mk-cache
 4, 设置过期时间 - setex key 10 'cache'
 5, 删除缓存 - del key
-##redis命令行的相关操作
+## redis命令行的相关操作
 1, 安装redis扩展（不介绍）
 2, 开启redis服务  
 ```
@@ -87,7 +87,7 @@ class File {
 ```
    del singwa 
 ```
-##php 操作redis
+## php 操作redis
 1, 安装phpredis扩展
 2, php链接redis服务-connect(127.0.0.1,6379)
 3, set 设置缓存

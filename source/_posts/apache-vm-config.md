@@ -6,8 +6,8 @@ tags: Php 学习笔记
 在php开发中，会`配虚拟主机`也是一个必备技能，下面就介绍一下如何配置apache中的虚拟主机。。。
 <!--more-->
 #基于域名的虚拟主机
-##配置虚拟主机
-###把虚拟主机主配置文件前的注释打开
+## 配置虚拟主机
+### 把虚拟主机主配置文件前的注释打开
 
 ```
 # Virtual hosts
@@ -17,7 +17,7 @@ Include conf/extra/httpd-vhosts.conf
 `DocumentRoot` 站点的根目录
 `ServerName` 站点的域名
 
-###让浏览器知道去哪访问站点
+### 让浏览器知道去哪访问站点
 
 我们打开`C盘`的一个叫`HOSTS`的文件
 在里面添加`域名IP`的对应。
@@ -30,7 +30,7 @@ C:\Windows\System32\drivers\etc\hosts
 
 ![](/images/virtualhost/01.png)
 
-###目录访问权限设置
+### 目录访问权限设置
 
 对于test.100.com
 因为它的目录在htdocs的下级，所以它的目录`访问权限继承此站点`的配置
@@ -55,7 +55,7 @@ Order deny,allow
 
 ![](/images/virtualhost/05.png)
 
-###访问站点目录的情况
+### 访问站点目录的情况
 
 ![](/images/virtualhost/06.png)
 
@@ -70,13 +70,13 @@ Options Indexes FollowSymLinks
 	如果是`正式上线的站点`，`一定`要去掉这个设置！
 FollowSymLinks这个参数`允许访问文件符号链接`，`建议支持`。
 
-###默认主机的变化
+### 默认主机的变化
 
 如果我们启用了虚拟主机配置文件conf/extra/httpd-vhosts.conf以后
 首先原来默认的主机访问不到了，或者叫失效了。
 其次，`默认的站点会指向第一个虚拟主机`。
 
-###目录索引页
+### 目录索引页
 
 就是访问目录时我们指定的页面文件，称为`目录索引页`。
 当前全局认可的一个参数
@@ -93,12 +93,12 @@ FollowSymLinks这个参数`允许访问文件符号链接`，`建议支持`。
 
 #APACHE的配置文件系统
 
-##APACHE的主配置文件系统
+## APACHE的主配置文件系统
 
 Httpd.conf以及其包含的一系统配置文件如httpd-vhots.conf都属于`主配置文件`。
 `虚拟主机的配置`会`覆盖主配置参数`。
 
-##分布式配置文件系统
+## 分布式配置文件系统
 
 `分布式`：分布在各站点目录中的`配置文件`。
 文件名：`.htaccess`

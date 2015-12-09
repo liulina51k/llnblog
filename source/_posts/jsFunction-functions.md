@@ -5,7 +5,7 @@ tags: Js 相关笔记
 ---
 今天主要是弄了js相关函数的一些东西。整理如下：
 <!--more-->
-##Function 函数
+## Function 函数
 **1.function.apply(thisArg,argArray) 函数的使用**
 该方法调用函数function,传递一个将被绑定到this上的对象和一个可选的参数数组。apply方法被用在apply调用模式中。
 ```

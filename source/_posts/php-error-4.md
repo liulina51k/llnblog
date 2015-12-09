@@ -7,12 +7,12 @@ tags: php
 <!--more-->
 自定义错误处理的主要实现是通过`set_error_handle()`函数:设置一个`用户自定义`的`错误处理函数`。使用该函数会绕过`php标准错误处理程序`。
 
-##使用`set_error_handle()`步骤
+## 使用`set_error_handle()`步骤
 1.创建错误处理函数
 2.设置不同级别调用函数
 3.set_error_handler()函数指定接管错误处理
 
-##set_error_handle()使用示例
+## set_error_handle()使用示例
 ```
 <?php
 header('content-type:text/html;charset=utf8');

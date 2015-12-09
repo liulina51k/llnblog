@@ -5,7 +5,7 @@ tags: Js 相关笔记
 ---
 今天在工作中遇到了`eval` ，弄了半天，烦死了。后来还是选择了其他的方式解决。有人建议我不要用eval，我就在想为什么？俗话说的好，`哪里跌倒，哪里爬起来`。于是我又更详细的了解了一下eval。介绍如下：
 <!--more-->
-##eval
+## eval
 
 eval 函数传递一个字符串给JavaScript `编译器`,并且执行其结果。它是一个被滥用得最多的`JavaScript特性`。那些对JavaScript语言一知半解的人们最常用到它。例如：如果你知道点表示法，但不知道下标表示法，就可能会这么写：
 ```
@@ -23,11 +23,11 @@ myvalue = myObject[myKey];
 `Function` 构造器是 eval的另一种形式，所以它同样也应该`避免使用`。
 
 浏览器提供的 `setTimeout` 和 `setInterval `函数，它们能接受字符串参数或函数参数。当传递的是`字符串参数`时，setTimeout 和 setInterval 会像eval 那样去处理。字符串参数形式也应该被`避免使用`。
-##eval 是魔鬼
+## eval 是魔鬼
 
 `eval` 函数以及它的亲戚（`Function`、`setTimeout`、`setInterval`）提供了`访问 JavaScript 编译器`的机会。有时候这是很`有用`的，但大多数情况下它表明存在着`相当糟糕`的代码。eval 函数是 JavaScript 被`误用`得最多的特性。
 
-##with 语句
+## with 语句
 JavaScript 提供了一个 with 语句，本意是想用来`快捷`地`访问对象的属性`。不幸的是，它的结果可能有时是`不可预料`的，所以应该`避免使用`它。
 下面的语句：
 ```

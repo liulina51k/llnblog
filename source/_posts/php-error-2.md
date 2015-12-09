@@ -5,12 +5,12 @@ tags: php
 ---
 本文中主要介绍如何开启错误配置选项，如何设置错误级别，以及如何通过trigger_error()来触发php错误。
 <!--more-->
-#如何设置错误级别
+# 如何设置错误级别
 1.通过修改`PHP配置文件`中的error_reporting选项的值
 2.通过`error_reporting()`函数设置
 3.通过`ini_set()`函数运行时设置
 
-##php`配置文件`中与错误相关选项
+## php`配置文件`中与错误相关选项
 
 | 选项              		|描述               | 
 | :--------         		| --------:         |
@@ -29,7 +29,7 @@ error_reporting = E_ALL&~E_NOTICE//显示所有的错误，除了注意消息
 ```
 可以通过`display_errors = On/Off` 来`开启或者关闭错误`(除了解析错误，都会显示。一般线上的时候不会开启此选项)。
 
-##通过`error_reporting()`函数设置
+## 通过`error_reporting()`函数设置
 ```
 echo error_reporting();
 echo '<hr/>';
@@ -46,7 +46,7 @@ echo '<hr/>';
 imooc();
 ```
 
-##通过`ini_set()`函数运行时设置
+## 通过`ini_set()`函数运行时设置
 ```
 //int_set():运行时设置配置选项的值
 ini_set('error_reporting',0);//关闭错误显示
@@ -54,7 +54,7 @@ ini_set('error_reporting',-1);//开启
 ini_set('display_errors',0);//不显示错误
 ```
 
-##通过`trigger_error()`触发PHP错误
+## 通过`trigger_error()`触发PHP错误
 触发错误的功能不只限于`PHP解释器`，还可以通过`trigger_error()`函数触发错误.
 ```
 //@抑制错误输出

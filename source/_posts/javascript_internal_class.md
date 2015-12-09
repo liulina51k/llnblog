@@ -6,7 +6,7 @@ tags: Js 相关笔记
 Javascript中本身有提供一些,可以直接使用的类, 这种类就是内部类, 主要有:
 Object/Array/Math/Boolean/String/RegExp/Date/Number
 <!--more-->
-#内部类的分类
+# 内部类的分类
 从`使用的方式`看，分为`静态类`和`动态类`
 `静态类` 使用 类名. 属性/方法
 ```
@@ -21,7 +21,7 @@ Math.abs(-11)
 
 下面介绍一些常用的`内部类`
 
-##Math 类
+## Math 类
 Math类是`静态类`，提供了常用的`数学函数`和`常数`，下面介绍一些常用的函数，其余见手册。
 ```
 console.log(Math.abs(-1));//1 (返回数的绝对值)
@@ -37,7 +37,7 @@ console.log(Math.random());//0.5753722707740963（一个大于0小于1的16位�
 console.log(Math.round(Math.random()*100));
 ```
 
-##Date 类
+## Date 类
 Date类提供了`日期和时间`的操作，下面介绍一些常用的函数，其余见手册。
 ```
 //日期Date类的使用，该类为动态类，该类需要通过对象来调用相应的方法。
@@ -52,7 +52,7 @@ console.log(date.getMinutes()); //从Date对象返回分钟
 console.log(date.getSeconds()); //从Date对象返回秒数
 ```
 
-##String 类
+## String 类
 String类是`动态类`，提供了对`字符串`的各种操作，下面介绍一些常用的函数，其余见手册。
 1.indexOf() 返回某个字符串值在该字符串中`首次出现`的位置
 ```
@@ -189,7 +189,7 @@ function SearchDemo(){
 console.log(SearchDemo());//18
 ```
 
-##Array 类
+## Array 类
 Array类提供了对`数组`的操作，使用Array类可以轻松的`创建数组`，并对数组进行`删除`，`排序`和`合并`等操作。
 ```
 //Array类的使用，该类为动态类，该类需要通过对象来调用相应的方法。
@@ -205,14 +205,14 @@ myArr1.push();//入栈
 //Array类没有下标越界问题
 ```
 
-##Boolean 类
+## Boolean 类
 ```
 //Boolean类的使用，该类是一个把布尔值打包的布尔对象，这个对象在实际编程中用的不是很多，了解即可。
 //toString() 把逻辑值转换为字符串，并返回结果
 //valueOf() 返回布尔对象的原始值
 ```
 
-##Number 类
+## Number 类
 ```
 //Number类的使用，该对象是原始数值的包装类。常用的函数有:
 //toString() 把一个Number对象转换为字符串，并返回结果

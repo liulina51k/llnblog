@@ -19,22 +19,22 @@ Bom------(BrowserObjectModel)浏览器对象模型
 ![Bom简介](/images/dom/dom4.png)
 ![Dom对象简介](/images/dom/dom5.png)
 ![Dom对象一览图](/images/dom/dom6.png)
-##Window 对象
+## Window 对象
 ![Window对象](/images/dom/dom7.png)
 ![Window属性](/images/dom/dom8.png)
-##History对象
+## History对象
 作用：该对象包含了`客户端访问过`的`URL`信息
 ![History对象](/images/dom/dom9.png)
-##Location对象
+## Location对象
 该对象表示浏览器 loaction
 Location 包含了`当前 URL `的信息。
 ![Location对象](/images/dom/dom10.png)
-##Screen对象
+## Screen对象
 ![Screen对象](/images/dom/dom11.png)
 ![Screen属性](/images/dom/dom12.png)
-##Navigator对象
+## Navigator对象
 ![Navigator对象](/images/dom/dom13.png)
-##关于绑定事件的细节
+## 关于绑定事件的细节
 ![事件](/images/dom/dom14.png)
 ![事件对象](/images/dom/dom15.png)
 ![监听](/images/dom/dom16.png)

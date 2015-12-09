@@ -23,7 +23,7 @@ tags: Php 学习笔记
 
 下面主要介绍下url重写即 `Url Rewrite`
 
-##URL-Rewrite URL重写
+## URL-Rewrite URL重写
 
 将请求的URL，`依据某种规则`，`更改`成其他的请求地址！是`web服务器Apache`一门技术。（其他web服务器都支持）
 例如：隐藏框架的入口文件操作，就是典型的使用了重写技术：
@@ -37,7 +37,7 @@ RewriteRule (.*) index.php/$1 [QSA,L]
 </IfModule>
 ```
 
-###加载重写rewrite模块
+### 加载重写rewrite模块
 
 Apache支持该技术。
 Apache的配置文件中。使用`loadModule`指令完成：
@@ -55,7 +55,7 @@ RewriteRule 测试URL目标URL标记
 基本流程：
 当前检测到请求到达该主机时，得到所请求的URL。依据用户通过`RewriteRule指令`设定的规则，`匹配目标URL`。与此同时需要`检测相应的条件`（使用语法RewriteCond完成）。
 
-###RewriteEngine
+### RewriteEngine
 
 该指令允许出现在：
 `.htaccess`,` <Directory>`段，`<VirturalHost>`段。
@@ -71,7 +71,7 @@ TIP：
 
 AllowOverride的值，不一定是All，取决于重写指令的`覆盖项`的值。
 
-###RewriteCond
+### RewriteCond
 
 重写条件。
 当`重写规则匹配`之后。可以利用RewriteRule指令上面的`RewriteCond条件`指令，再指定是否重写的条件。之后`条件也满足`后，才会`发生重写效果`。
@@ -80,7 +80,7 @@ AllowOverride的值，不一定是All，取决于重写指令的`覆盖项`的�
 
 `一条规则Rule`，可以受到`多个条件`的控制。
 
-###RewriteRule
+### RewriteRule
 
 `重写规则`，指明`哪种URL`应该`被重写到目标URL`上。
 RewriteRule匹配URL规则重写的目标URL
@@ -94,14 +94,14 @@ RewriteRule匹配URL规则重写的目标URL
 
 `提示：正则语法的是通用的`。
 
-###IfModule
+### IfModule
 
 用于判断`是否载入`了某个`模块`的。
 <ifModule 模块名>
 	载入模块执行的配置
 </ifModule>
 
-##详细语法RewriteCond
+## 详细语法RewriteCond
 
 RewriteCond`测试字符串测试条件`的标识
 
@@ -122,7 +122,7 @@ REQUEST_FILENAME	请求的脚本名
 `-f`	是否是文件
 `-d`	是否是目录
 
-###示例一：浏览器相关主页
+### 示例一：浏览器相关主页
 
 利用`当前浏览器`的不同，展示`不同的主页`。
 ```
@@ -153,7 +153,7 @@ RewriteRulr ^$ index_ie.php
 RewriteRulr ^$ index.php
 ```
 
-###示例二：防止盗链
+### 示例二：防止盗链
 
 HTTP_REFERER
 `请求来源`。
@@ -176,7 +176,7 @@ RewriteRuleRule \.(jpg|jpeg|gif|png)$ - [F]
 `-重写的URL`，表示`不予重写`的含义。
 `[F]`规则标识F，表示Forbidden，`阻止该请求`的含义。
 
-##RewriteRule的详细语法
+## RewriteRule的详细语法
 
 RewriteRule `匹配规则` `重写目标规则`标志
 `匹配规则`：正则表达式
