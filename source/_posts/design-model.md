@@ -1,7 +1,7 @@
 title: design model
 date: 2015-12-16 23:08:28
-categories: php
-tags: php
+categories: Oop
+tags: Oop
 ---
 下面开始，会陆续的记录一些面向对象的一些内容，包括它的方方面面吧,其中最主要的是关于设计模式的介绍吧！也便于自己以后的查找吧！
 <!--more-->
